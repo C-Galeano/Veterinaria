@@ -78,7 +78,7 @@ public class MascotaController {
         }
     }
 
-    // desactivar mascota — borrado lógico, no la elimina de la BD
+    // desactivar mascota — borrado lógico
     // SQL: UPDATE mascotas SET activo = false WHERE id = ?
     @PatchMapping("/{id}/desactivar")
     public ResponseEntity<Void> desactivar(@PathVariable Long id) {
@@ -90,7 +90,7 @@ public class MascotaController {
         }
     }
 
-    // eliminar mascota — borrado físico, la borra de la BD
+    // eliminar mascota — borrado físico
     // SQL: DELETE FROM mascotas WHERE id = ?
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminar(@PathVariable Long id) {

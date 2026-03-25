@@ -1,6 +1,6 @@
 package com.example.veterinaria.REPOSITORY;
 
-import com.example.demo.Model.Mascota;
+import com.example.veterinaria.MODEL.Mascota;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -11,7 +11,6 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class MascotaRequestDTO {
 
-    // datos que el cliente debe enviar
     private String nombre;
     private String especie;
     private String raza;

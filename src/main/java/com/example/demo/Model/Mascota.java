@@ -1,11 +1,11 @@
-package com.example.demo.Model;
+package com.example.veterinaria.MODEL;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
 
-// entidad que mapea la tabla mascotas en MySQL
+// entidad que mapea la tabla mascotas en PostgreSQL
 @Entity
 @Table(name = "mascotas")
 @Getter

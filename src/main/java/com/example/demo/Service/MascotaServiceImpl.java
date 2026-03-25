@@ -2,7 +2,7 @@ package com.example.veterinaria.SERVICE;
 
 import com.example.veterinaria.DTO.MascotaRequestDTO;
 import com.example.veterinaria.DTO.MascotaResponseDTO;
-import com.example.demo.Model.Mascota;
+import com.example.veterinaria.MODEL.Mascota;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
@@ -116,7 +116,6 @@ public class MascotaServiceImpl implements MascotaService {
             throw new RuntimeException("No se encontró la mascota con id: " + id);
         }
 
-        // actualizamos solo los campos que vienen en el DTO
         existente.setNombre(dto.getNombre());
         existente.setEspecie(dto.getEspecie());
         existente.setRaza(dto.getRaza());
