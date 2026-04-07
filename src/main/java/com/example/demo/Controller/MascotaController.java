@@ -13,6 +13,7 @@ import java.util.List;
 @RequestMapping("/api/mascotas")
 public class MascotaController {
 
+    @GetMapping("/")
     private final MascotaService mascotaService;
 
     public MascotaController(MascotaService mascotaService) {
